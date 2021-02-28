@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  background-image: url("img/background.jfif");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+#form-login,
+#form-singup {
+  width: 40%;
+  margin: auto;
+  background-color: #739fe4;
+  box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.75);
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+#form-login h1,
+#form-singup h1 {
+  font-size: 3em;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+#form-login img,
+#form-singup img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 40%;
+}
+#form-login input,
+#form-singup input,
+.login-btn,
+.singup-btn,
+.save-btn {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #fff;
+  outline: none;
+  display: block;
+  padding: 10px;
+  font-size: 1.2em;
+  margin: 20px auto;
+  background-color: #ddd;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.login-btn,
+.singup-btn,
+.save-btn {
+  cursor: pointer;
+  background-color: #9f09da;
+  color: #fff;
+  border: none;
+}
+.login-btn:hover,
+.singup-btn:hover,
+.save-btn:hover,
+.right-header button:hover {
+  background-color: #262786;
+}
+.center {
+  text-align: center;
+}
+.media {
+  text-align: center;
+  padding: 10px;
+}
+.media i {
+  padding: 5px;
+  font-size: 1.7em;
+}
+.media i:hover {
+  opacity: 0.6;
+}
+#form-singup input[type="checkbox"] {
+  float: left;
+  width: 10%;
+  margin: 0;
+  margin-left: 30px;
+}
+#page {
+  background-color: #ccc;
+  overflow: auto;
+}
+.none {
+  display: none;
+}
+#error,
+#error1 {
+  color: #d3131e;
+  border: 1px solid #d3131e;
+  font-size: 1em;
+  padding: 10px;
+  margin: 0 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f4959b;
+}
+
+#header {
+  height: 80px;
+  background-color: #adbaf6;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+#user-info,
+.blog {
+  font-size: 1.3em;
+  line-height: 50px;
+  color: #262786;
+  margin-left: 20px;
+  font-weight: 600;
+}
+#header img {
+  height: 50px;
+  float: left;
+}
+.right-header {
+  float: right;
+  font-size: 1.3em;
+}
+.right-header i {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.right-header button {
+  padding: 10px 30px;
+  background-color: #9f09da;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+  margin-left: 50px;
+}
+#page {
+  position: relative;
+}
+#page header img {
+  width: 100%;
+}
+.myblog {
+  position: absolute;
+  top: 300px;
+  left: 40px;
+  font-size: 2em;
+}
+main {
+  width: 70%;
+  float: left;
+  padding: 10px;
+  background-color: #ccc;
+}
+aside {
+  width: 30%;
+  float: right;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+#blog {
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin: 20px;
+  overflow: hidden;
+}
+#myblog img {
+  height: 600px;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+#myblog h2,
+#myblog p {
+  text-align: center;
+}
+#myblog p,
+.citati li {
+  font-size: 1.2em;
+}
+.citati {
+  text-align: center;
+  list-style-type: none;
+}
+.citati li {
+  padding: 10px;
+  margin: 10px;
+}
+#like-btn {
+  float: left;
+  margin-left: 80px;
+}
+#coment-btn {
+  float: right;
+  margin-right: 80px;
+}
+#like-btn,
+#coment-btn,
+#btn-savecoment,
+#form-blog button,
+#click-post {
+  padding: 12px 24px;
+  background-color: #bbb;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  color: #000;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+}
+#like-btn:hover,
+#coment-btn:hover,
+#btn-savecoment:hover,
+#form-blog button:hover,
+#click-post:hover {
+  background-color: #555;
+  color: #fff;
+}
+#click-post {
+  padding: 12px 50px;
+}
+#btn-savecoment {
+  margin: 20px;
+}
+.coment {
+  clear: both;
+  margin: 0 30px;
+  padding: 10px;
+}
+textarea {
+  font-size: 1.2em;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+#about,
+#follow,
+#posts {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.posts,
+#follow h4 {
+  height: 50px;
+  background-color: #666;
+  padding: 5px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 10px;
+}
+.posts h4,
+#follow h4 {
+  margin: 5px;
+  line-height: 30px;
+}
+.post-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.post-list li img {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.post-list li:last-child {
+  border-bottom: none;
+}
+.post-list li {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  height: 80px;
+}
+.post-list li:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+.post-list li span {
+  margin-left: 100px;
+  font-size: 1.3em;
+  line-height: 50px;
+}
+.posts {
+  padding: 10px 0;
+  margin: 10px;
+}
+#posted-coment {
+  padding: 20px;
+  box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.75);
+  margin: 30px;
+  clear: both;
+}
+.follow {
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+}
+.follow i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.time {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  font-weight: bold;
+}
+
+.post-coment {
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #ccc;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+#form-blog {
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px;
+}
+#form-blog label,
+#form-blog input,
+#form-blog button {
+  display: block;
+  font-size: 1em;
+}
+#form-blog label {
+  font-size: 1.2em;
+  font-weight: 800px;
+  margin: 5px;
+}
+#form-blog input {
+  width: 100%;
+  padding: 8px 12px;
+  outline: none;
+  border: 1px solid #666;
+}
+
+#form-blog-post {
+  padding: 10px 20px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0px 1px 21px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+#form-blog-post h1,
+#form-blog-post h3,
+#form-blog-post p {
+  text-align: center;
+}
+#form-blog-post img {
+  height: 600px;
+  display: block;
+  margin: auto;
+}
+#click-post {
+  margin: 20px 40px;
+}
+#privacy {
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: #f3f3f3;
+}
+.policy {
+  font-weight: bold;
+}
